@@ -91,6 +91,10 @@ public class ExcelReader {
             });
             System.out.println();
         });
+        int colNum = sheet.getRow(0).getLastCellNum();
+        int rowNum = sheet.getLastRowNum()+1;  
+        System.out.println("Columns =>"+ colNum );
+        System.out.println("Rows =>"+ rowNum );        
 
         // Closing the workbook
         workbook.close();
